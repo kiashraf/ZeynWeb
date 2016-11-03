@@ -82,7 +82,7 @@ var ios = function (io) {
 module.exports.ios = ios;
 */
 
-app.io.listen(server);
+ 
 /**
  * Normalize a port into a number, string, or false.
  */

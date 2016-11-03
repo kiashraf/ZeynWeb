@@ -31,7 +31,7 @@ app.io = require('socket.io')();
 
 //connecting with the database
 
-mongoose.connect(connection.url);
+mongoose.connect(connection.dbURI);
 
 require('./config/passport')(passport);
 
@@ -55,7 +55,7 @@ app.use(cookieParser());
 * Setting session Middleware as variable for Sockt.IO
 * */
 var sessionMiddleware =session({
-    secret: 'keyboardkafhlfaflhfdafcat',
+    secret:connection.sessionSecret,
     resave: false,
     saveUninitialized: true,
     httpOnly: true,
