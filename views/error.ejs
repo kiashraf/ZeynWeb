@@ -1,3 +1,28 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ZeynDoc</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<body>
+
+<div class="container-fluid">
+    <a href="/"><button class="btn btn-danger btn-block"><strong><%= error.status %> <%= message %> <pre><%= error.stack %></pre> </strong></button></a>
+    <div class="col-lg-6 col-lg-offset-3 ">
+
+
+
+
+        <a href="/">
+            <i class="fa fa-exclamation-triangle fa-5x"></i>  <button class="btn btn-info btn-lg col-lg-offset-4">Please Click here to go back to home page</button>
+        </a>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

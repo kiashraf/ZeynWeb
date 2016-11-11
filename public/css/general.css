@@ -249,7 +249,8 @@ color: #ECEBEB;
 	color: #f8f8f8;
 	/*background: url(../img/intro/intro5.jpg) no-repeat center center;*/
 	background: url(../img/intro/herbs.jpg) no-repeat center center ;
-	background-size: cover;
+	/*background-size: */
+	background-size:cover;;
 	text-align: center;
 }
 .img-responsive { width:100%;
@@ -321,7 +322,31 @@ color: #ECEBEB;
 	background: url(../img/intro/banner-bg.jpg) no-repeat center center;
 	background-size: cover;
 }
+/*Tooltip*/
 
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: visible;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
 /* Animate */
 .rotate{
     -webkit-transition-duration: 0.8s;

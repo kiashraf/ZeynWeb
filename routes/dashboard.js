@@ -6,8 +6,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', isLoggedIn, function (req, res, next) {
-    res.render('dashboard', {title: 'Dashboard', user: req.user ,
-        message : req.flash('alreadyLoggedIn')});
+
+
+    res.render('dashboard', {
+        title: 'Dashboard', user: req.user,
+        message: req.flash('alreadyLoggedIn'),
+        appId: 'f303676dbaecc46f83e58e9dabc41d6b'
+
+    });
 
 });
 
@@ -19,6 +25,6 @@ function isLoggedIn(req, res, next) {
         return next();
 
     // if they aren't redirect them to the home page
-    res.redirect('/');
+    res.redirect('/signup');
 }
 module.exports = router;
