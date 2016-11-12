@@ -606,6 +606,7 @@ a:hover {
 .mck-container .left .mck-box-top [class*="blk-"] {
 	height: 59px;
 	line-height: 59px;
+
 }
 
 .mck-box-top.mck-row, .mck-search-tab-box.mck-row {
@@ -3276,6 +3277,9 @@ ol, ul {
 		width: 300px;
 	}
 }
+
+
+
 
 .message-send-container {
 	width: 100%;
