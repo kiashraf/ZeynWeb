@@ -27,10 +27,8 @@ body {
 	border-radius: 0 !important;
 	font-size: 12px;
 	line-height: 20px;
-	top: 40px;
-	left: 150px;
-	right: 150px;
-	width: calc(100% - 300px);
+
+	width: calc(100% - 100px);
 	min-width: 800px;
 	height: calc(100% - 80px);
 }
