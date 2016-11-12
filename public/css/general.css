@@ -252,6 +252,7 @@ color: #ECEBEB;
 	/*background-size: */
 	background-size:cover;;
 	text-align: center;
+    object-fit: contain;
 }
 .img-responsive { width:100%;
 }
@@ -1094,7 +1095,7 @@ color: #ECEBEB;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
-		    background-image: none; 
+		    background-image: url(../img/intro/herbs.jpg) ;
 			background-size: cover;
 			text-align: center;
 			background-color: #34495e;
