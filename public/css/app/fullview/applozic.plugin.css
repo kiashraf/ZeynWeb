@@ -485,6 +485,7 @@ body {
 	position: relative;
 	min-height: 1px;
 	float: left;
+	min-width: 300px;
 }
 
 .mck-panel-ft .mck-row {
