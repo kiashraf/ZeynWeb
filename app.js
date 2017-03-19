@@ -65,9 +65,18 @@ var sessionMiddleware =session({
 app.io.use(function(socket, next) {
     sessionMiddleware(socket.request, socket.request.res, next);
 });
+/**MiddleWare For using https
+ * */
+var requireHTTPS= function (req,res,next) {
+if(!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development"){
+    return res.redirect('https://' + req.get('host') + req.url);
+}
+next();
+}
 
 app.use(sessionMiddleware);
 app.use(flash());
+app.use(requireHTTPS);
 
 app.use(passport.initialize());
 app.use(passport.session());
